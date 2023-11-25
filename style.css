@@ -59,3 +59,10 @@ ul li{
     cursor: pointer;
     position: relative;
 }
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #285eb5;
+}

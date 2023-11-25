@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+    ">
 </head>
 <body>
     <div class="container">
         <div class="todo-list">
             <h2>TO-DO-List</h2>
             <div class="row">
-                <input type="text" id="input" placeholder="Add a new item">
-                <button id="addbtn" onclick="add_item()">Add to list</button>
+                <input type="text" id="input" placeholder="Add a new item" required>
+                <button id="addbtn" onclick="add_item()">Add Items</button>
             </div>
-            <ul id="list-item"></ul>
+            <ul id="list-item">
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>
