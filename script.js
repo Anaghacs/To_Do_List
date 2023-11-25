@@ -1,12 +1,15 @@
 function add_item(){
     var taskInput = document.getElementById('input');
     var taskText = taskInput.value.trim();
-    let msg=[];
+    
     if(taskInput.value === ''||taskInput.value===" "){
-      // msg.push('Please enter the valid item ');
-        alert("Please enter the valid item");
+      document.getElementById('username-error').innerHTML="Please enter valid item";
+      document.getElementById('username-error').style.display="block";
+
     }
     else  {
+      document.getElementById('username-error').style.display="none";
+
       // Create an html element using js dom 
       var taskList = document.getElementById('list-item');
       var newTaskItem = document.createElement('li');
@@ -49,5 +52,4 @@ function add_item(){
       taskInput.value = '';
     }   
 }
-
 
